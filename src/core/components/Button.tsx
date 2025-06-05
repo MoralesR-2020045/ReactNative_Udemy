@@ -19,14 +19,16 @@ export const Button = ({ title, onPress }: ButtonProps) => {
 
 const styles = StyleSheet.create({
     btn: {
+        width: "100%",
         backgroundColor: colors.primary,
         padding: 10,
         borderRadius: 5,
-        marginTop: 20
+        marginTop: 10
     },
 
     txt: {
         color: colors.complementary,
         fontSize: 16,
+        textAlign: "center"
     }
 })

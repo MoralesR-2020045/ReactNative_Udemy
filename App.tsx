@@ -6,6 +6,7 @@ import { Button, Input } from '@core'
 import { useFonts } from 'expo-font';
 import { useEffect } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
+import { NavigationApp } from './navigation';
 
 export default function App() {
   const [loaded, error] = useFonts({
@@ -23,12 +24,7 @@ export default function App() {
     return null;
   }
 
-  return (
-    <View style={styles.container}>
-      <Input value='' onChange={console.log}/>
-      <Button title='Hola' onPress={() => console.log('Hola')} />
-    </View>
-  );
+  return <NavigationApp/>
 
 }
 
